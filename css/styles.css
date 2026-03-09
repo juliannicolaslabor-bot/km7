@@ -43,7 +43,7 @@ background:#18202b;
 padding:25px;
 border-radius:12px;
 }
-input{
+input,textarea{
 width:100%;
 padding:12px;
 margin-bottom:12px;
@@ -64,3 +64,13 @@ width:100%;
 font-size:28px;
 font-weight:bold;
 }
+.blog{
+margin-top:60px;
+}
+.blog-card{
+background:#18202b;
+padding:20px;
+border-radius:10px;
+margin-bottom:20px;
+}
+a{color:#ff4b4b;text-decoration:none}

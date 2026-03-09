@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>K-MION Location utilitaire</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header>
+<img src="assets/logo.png" width="220">
+<h1>K-MION Location Utilitaire</h1>
+<p>Location camion pour déménagement</p>
+</header>
+
+<div class="container">
+
+<h2>Choisissez votre camion</h2>
+
+<div class="fleet">
+
+<div class="card" onclick="selectTruck('3m3',80)">
+<img src="assets/truck-3m3.png">
+<div class="card-body">
+<span>3m3</span>
+<strong>80€/jour</strong>
+</div>
+</div>
+
+<div class="card" onclick="selectTruck('12m3',110)">
+<img src="assets/truck-12m3.png">
+<div class="card-body">
+<span>12m3</span>
+<strong>110€/jour</strong>
+</div>
+</div>
+
+<div class="card" onclick="selectTruck('20m3',150)">
+<img src="assets/truck-20m3.jpeg">
+<div class="card-body">
+<span>20m3</span>
+<strong>150€/jour</strong>
+</div>
+</div>
+
+</div>
+
+<div class="form" id="booking">
+
+<h2>Réserver</h2>
+
+<input id="vehicle" value="3m3" readonly>
+
+<input id="start" type="date" onchange="updatePrice()">
+<input id="end" type="date" onchange="updatePrice()">
+
+<input id="name" placeholder="Nom">
+<input id="phone" placeholder="Téléphone">
+
+<div class="price" id="price">80€</div>
+
+<button onclick="sendWhats()">Réserver sur WhatsApp</button>
+
+</div>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
